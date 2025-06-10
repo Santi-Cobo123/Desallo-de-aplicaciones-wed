@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías del Futuro - Innovación y Progreso</title>
+    <style>
+        /* styles.css - Diseño Futurista Original */
+
+        /* Reset y configuración base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #e0e6ed;
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 25%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animación de fondo futurista */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(0, 255, 128, 0.1) 0%, transparent 50%);
+            z-index: -1;
+            animation: pulsarFondo 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulsarFondo {
+            0% { opacity: 0.3; }
+            100% { opacity: 0.7; }
+        }
+
+        /* Estilos del Header */
+        header {
+            background: linear-gradient(45deg, #0f3460, #16213e, #e94560);
+            color: #ffffff;
+            padding: 3rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            animation: barridoLuz 3s infinite;
+        }
+
+        @keyframes barridoLuz {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+            font-weight: 700;
+            letter-spacing: 2px;
+            animation: brilloTexto 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes brilloTexto {
+            0% { text-shadow: 0 0 20px rgba(0, 255, 255, 0.5); }
+            100% { text-shadow: 0 0 30px rgba(0, 255, 255, 0.8), 0 0 40px rgba(255, 0, 255, 0.3); }
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* Estilos de Navegación */
+        nav {
+            background: rgba(15, 52, 96, 0.9);
+            padding: 1rem 0;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+        }
+
+        nav a {
+            color: #e0e6ed;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            transition: all 0.4s ease;
+            position: relative;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(45deg, #00ffff, #ff00ff);
+            border-radius: 25px;
+            transition: width 0.4s ease;
+            z-index: -1;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+
+        nav a:hover {
+            color: #000;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 255, 255, 0.3);
+        }
+
+        /* Estilos del contenido principal */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 45px rgba(0, 255, 255, 0.2);
+        }
+
+        h2 {
+            color: #00ffff;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(45deg, #00ffff, #ff00ff);
+            border-radius: 2px;
+        }
+
+        h3 {
+            color: #ff6b9d;
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem 0;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        h3::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: #00ffff;
+            animation: parpadeo 2s infinite;
+        }
+
+        @keyframes parpadeo {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.3; }
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #00ffff;
+            font-weight: 600;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+        }
+
+        em {
+            color: #ff6b9d;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Estilos de imagen */
+        .imagen-destacada {
+            text-align: center;
+            margin: 3rem 0;
+            position: relative;
+        }
+
+        img {
+            max-width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(0, 255, 255, 0.3);
+            transition: all 0.4s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 25px 50px rgba(0, 255, 255, 0.4);
+            border-color: #00ffff;
+        }
+
+        /* Estilos de video */
+        .contenedor-video {
+            text-align: center;
+            margin: 3rem 0;
+        }
+          video {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(255, 107, 157, 0.3);
+            transition: all 0.4s ease;
+        }
+
+        video:hover {
+            box-shadow: 0 25px 50px rgba(255, 107, 157, 0.4);
+            border-color: #ff6b9d;
+        }
+
+        /* Estilos de listas */
+        ul, ol {
+            margin: 2rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            position: relative;
+            padding-left: 10px;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li::before {
+            content: '◆';
+            position: absolute;
+            left: -15px;
+            color: #00ffff;
+            font-size: 0.8rem;
+        }
+
+        ol li {
+            color: #e0e6ed;
+            counter-increment: item;
+        }
+
+        ol li::marker {
+            color: #ff6b9d;
+            font-weight: bold;
+        }
+
+        /* Estilos de tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 3rem 0;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        thead {
+            background: linear-gradient(45deg, #0f3460, #16213e);
+        }
+
+        th, td {
+            padding: 1.2rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        th {
+            color: #00ffff;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        tbody tr {
+            transition: all 0.3s ease;
+        }
+
+        tbody tr:hover {
+            background: rgba(0, 255, 255, 0.1);
+            transform: scale(1.02);
+        }
+
+        tbody tr:nth-child(even) {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        /* Estilos de formulario */
+        form {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            margin: 3rem 0;
+            backdrop-filter: blur(15px);
+        }
+
+        .grupo-formulario {
+            margin-bottom: 2rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.8rem;
+            color: #00ffff;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            font-size: 1.1rem;
+            background: rgba(255, 255, 255, 0.05);
+            color: #e0e6ed;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #00ffff;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        input::placeholder {
+            color: rgba(224, 230, 237, 0.5);
+            font-style: italic;
+        }
+
+        button {
+            background: linear-gradient(45deg, #00ffff, #ff00ff);
+            color: #000;
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.6s ease;
+        }
+
+        button:hover::before {
+            left: 100%;
+        }
+
+        button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(0, 255, 255, 0.4);
+        }
+
+        /* Estilos del footer */
+        footer {
+            background: linear-gradient(45deg, #0c0c0c, #1a1a2e);
+            color: #e0e6ed;
+            text-align: center;
+            padding: 3rem;
+            border-top: 1px solid rgba(0, 255, 255, 0.2);
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+            opacity: 0.8;
+        }
+
+        /* Estilos de enlace externo */
+        .enlace-externo {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .enlace-externo::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, #00ffff, #ff00ff);
+            transition: width 0.4s ease;
+        }
+
+        .enlace-externo:hover::after {
+            width: 100%;
+        }
+
+        .enlace-externo:hover {
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+        }
+
+        /* Estilos del article */
+        article {
+            background: rgba(0, 255, 255, 0.05);
+            padding: 2rem;
+            border-left: 4px solid #00ffff;
+            margin: 2rem 0;
+            border-radius: 0 15px 15px 0;
+            position: relative;
+            backdrop-filter: blur(5px);
+        }
+
+        article::before {
+            content: '💡';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            background: linear-gradient(45deg, #00ffff, #ff00ff);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            main {
+                padding: 1rem;
+            }
+            
+            section {
+                padding: 2rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER con etiqueta semántica -->
+    <header>
+        <h1>Tecnologías del Futuro</h1>
+        <p>Descubre las innovaciones que cambiarán el mundo</p>
+    </header>
+
+    <!-- NAVIGATION con etiqueta semántica -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#inteligencia">IA & Robótica</a></li>
+            <li><a href="#energia">Energía</a></li>
+            <li><a href="#contacto">Únete</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN con etiqueta semántica -->
+    <main>
+        <!-- SECTION 1: Introducción -->
+        <section id="inicio">
+            <h2>El Amanecer de una Nueva Era Tecnológica</h2>
+            
+            <p>Vivimos en un momento <strong>extraordinario de la historia humana</strong>, donde las tecnologías emergentes están redefiniendo completamente nuestra forma de vivir, trabajar y relacionarnos. Desde la <em>inteligencia artificial</em> hasta la computación cuántica, cada avance nos acerca más a un futuro que antes solo existía en la ciencia ficción.</p>
+
+            <p>En esta exploración del mañana, descubriremos cómo las <strong>innovaciones revolucionarias</strong> están transformando sectores enteros y creando <em>oportunidades sin precedentes</em> para el desarrollo humano y la sostenibilidad planetaria.</p>
+
+            <!-- IMAGEN con atributo alt -->
+            <div class="imagen-destacada">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Representación futurista de una ciudad inteligente con hologramas, robots y tecnología avanzada integrada en la arquitectura">
+            </div>
+        </section>
+
+        <!-- SECTION 2: Inteligencia Artificial y Robótica -->
+        <section id="inteligencia">
+            <h2>Inteligencia Artificial y Robótica Avanzada</h2>
+            
+            <h3>Revolución en la Automatización Inteligente</h3>
+            <p>La convergencia entre <strong>inteligencia artificial</strong> y robótica está generando sistemas autónomos capaces de realizar tareas complejas con una <em>precisión y eficiencia</em> nunca antes vista. Estos desarrollos prometen transformar industrias completas.</p>
+
+            <!-- LISTA ORDENADA -->
+            <h3>Top 5 Avances más Prometedores en IA</h3>
+            <ol>
+                <li>Procesamiento de Lenguaje Natural Contextual - Comunicación humano-máquina fluida</li>
+                <li>Visión Artificial Tridimensional - Percepción espacial avanzada para robots</li>
+                <li>Aprendizaje Automático Federado - IA que aprende sin comprometer privacidad</li>
+                <li>Redes Neuronales Cuánticas - Computación exponencialmente más potente</li>
+                <li>IA General Artificial - Sistemas con capacidades cognitivas humanas</li>
+            </ol>
+
+            <!-- LISTA DESORDENADA -->
+            <h3>Aplicaciones Transformadoras de la Robótica</h3>
+            <ul>
+                <li>Robots cirujanos con precisión nanométrica para operaciones complejas</li>
+                <li>Asistentes domésticos inteligentes que anticipan necesidades familiares</li>
+                <li>Sistemas de rescate autónomos para situaciones de emergencia</li>
+                <li>Robots agricultores que optimizan cultivos y reducen pesticidas</li>
+                <li>Compañeros terapéuticos para tratamiento de trastornos emocionales</li>
+            </ul>
+
+             <div class="contenedor-video" style="max-width: 900px; margin: 0 auto; text-align: center;">
+    <h3>🎬 Tu Video Personalizado</h3>
+    <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe 
+            src="https://drive.google.com/file/d/1Dd7bq5ZFB-AWyXrgRu8ACRPFqnQOUS-T/preview" 
+            style="position: absolute; top:0; left:0; width: 100%; height: 100%; border: none;" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    <p style="margin-top: 1rem; font-style: italic; color: #ff6b9d;">
+        ✨ Video integrado desde Google Drive con efectos futuristas
+    </p>
+</div>
+
+
+        <!-- SECTION 3: Energías del Futuro -->
+        <section id="energia">
+            <h2>Revolución Energética Sostenible</h2>
+
+            <!-- ARTICLE con etiqueta semántica -->
+            <article>
+                <h3>El Paradigma de la Energía Limpia</h3>
+                <p>La transición hacia fuentes de energía <strong>completamente renovables y sostenibles</strong> no es solo una necesidad ambiental, sino una oportunidad económica gigantesca. Las tecnologías emergentes están haciendo posible un mundo alimentado por <em>energía limpia, abundante y accesible</em>.</p>
+                
+                <p>Los avances en <strong>almacenamiento energético</strong> y <strong>fusión nuclear</strong> prometen resolver definitivamente la crisis energética global, mientras que las <em>redes inteligentes</em> optimizarán la distribución y consumo de energía a nivel planetario.</p>
+            </article>
+
+            <!-- TABLA con thead, tbody y th -->
+            <h3>Comparativa de Tecnologías Energéticas Emergentes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Potencial Energético</th>
+                        <th>Tiempo de Implementación</th>
+                        <th>Impacto Ambiental</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fusión Nuclear Controlada</td>
+                        <td>Ilimitado</td>
+                        <td>2035-2040</td>
+                        <td>Cero emisiones</td>
+                    </tr>
+                    <tr>
+                        <td>Paneles Solares Perovskita</td>
+                        <td>45% eficiencia</td>
+                        <td>2028-2030</td>
+                        <td>Mínimo</td>
+                    </tr>
+                    <tr>
+                        <td>Baterías de Estado Sólido</td>
+                        <td>10x densidad actual</td>
+                        <td>2026-2028</td>
+                        <td>Reciclable 100%</td>
+                    </tr>
+                    <tr>
+                        <td>Generadores Geotérmicos Profundos</td>
+                        <td>Constante 24/7</td>
+                        <td>2030-2035</td>
+                        <td>Neutro</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- ENLACE EXTERNO -->
+            <p>Para mantenerte actualizado sobre los últimos desarrollos en energía sostenible, visita el 
+            <a href="https://www.irena.org/" target="_blank" class="enlace-externo">International Renewable Energy Agency</a>, 
+            la organización líder mundial en promoción de energías renovables y sostenibles.</p>
+        </section>
+
+        <!-- SECTION 4: Únete al Futuro -->
+        <section id="contacto">
+            <h2>Únete a la Revolución Tecnológica</h2>
+            
+            <p>¿Quieres ser parte de esta <strong>transformación tecnológica</strong>? Únete a nuestra comunidad de innovadores, científicos y visionarios que están <em>construyendo el futuro</em> que todos queremos vivir.</p>
+
+            <p>Recibe actualizaciones exclusivas sobre <strong>avances tecnológicos</strong>, participa en <em>debates sobre el futuro</em> y conecta con mentes brillantes de todo el mundo.</p>
+
+            <!-- FORMULARIO con campos requeridos -->
+            <form action="#" method="POST">
+                <div class="grupo-formulario">
+                    <label for="nombre">Tu nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+                
+                <div class="grupo-formulario">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="tu@email.com" required>
+                </div>
+                
+                <div class="grupo-formulario">
+                    <button type="submit">Unirme al Futuro</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER con etiqueta semántica -->
+    <footer>
+        <p>&copy; 2025 Tecnologías del Futuro. Innovación sin límites.</p>
+        <p>Construyendo un mañana mejor a través de la ciencia y la tecnología.</p>
+    </footer>
+
+    <script>
+        // Efecto de desplazamiento suave para la navegación
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animación de aparición al hacer scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(50px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Manejo del formulario
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const correo = document.getElementById('correo').value;
+            
+            if (nombre && correo) {
+                alert(`¡Bienvenido al futuro, ${nombre}! Te hemos enviado información a ${correo}`);
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html>
